@@ -1,1 +1,5 @@
+
 language: java
+install: true
+script: ./gradlew build
+after_success: ./gradlew bintrayUpload
